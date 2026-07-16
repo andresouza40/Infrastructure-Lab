@@ -59,7 +59,7 @@ A administração das permissões foi realizada através de **IAM Groups**, segu
 
 Criação dos usuários que representam cada função dentro da empresa.
 
-![](images/01-iam-users.png)
+![](../images/01-iam-users.png)
 
 ---
 
@@ -67,7 +67,7 @@ Criação dos usuários que representam cada função dentro da empresa.
 
 Organização dos usuários em grupos para facilitar o gerenciamento das permissões.
 
-![](images/02-iam-groups.png)
+![](../images/02-iam-groups.png)
 
 ---
 
@@ -79,7 +79,7 @@ Policy aplicada:
 
 - AdministratorAccess
 
-![](images/03-cloud-administrators-policy.png)
+![](../images/03-cloud-administrators-policy.png)
 
 ---
 
@@ -91,7 +91,7 @@ Policy aplicada:
 
 - PowerUserAccess
 
-![](images/04-cloud-engineers-policy.png)
+![](../images/04-cloud-engineers-policy.png)
 
 ---
 
@@ -103,7 +103,7 @@ Policy aplicada:
 
 - ReadOnlyAccess
 
-![](images/05-service-desk-policy.png)
+![](../images/05-service-desk-policy.png)
 
 ---
 
