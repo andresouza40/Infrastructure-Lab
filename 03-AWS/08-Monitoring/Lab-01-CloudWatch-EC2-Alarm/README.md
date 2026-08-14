@@ -29,4 +29,4 @@ Este laboratório demonstra a implementação de observabilidade e monitoramento
 
 ---
 
-> **Status:** Missão 4 (Monitoring) e Meta Diária concluídas com sucesso! 🚀
+> **Status:** Monitoring e Meta Diária concluídas com sucesso!
