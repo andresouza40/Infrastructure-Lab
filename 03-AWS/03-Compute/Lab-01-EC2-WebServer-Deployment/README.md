@@ -31,4 +31,4 @@ Este repositório contém a implementação automatizada de um servidor Web **Ap
 
 ---
 
-> **Status:** Missão 3 (Compute) concluída com sucesso! 🚀
+> **Status:** Compute concluída com sucesso!

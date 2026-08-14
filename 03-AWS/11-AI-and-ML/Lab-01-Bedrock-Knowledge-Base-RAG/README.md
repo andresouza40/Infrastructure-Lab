@@ -29,4 +29,4 @@ A imagem abaixo demonstra a consulta via **Standard Retrieval Only**, onde a Kno
 
 ---
 
-> **Status:** Laboratório concluído e validado com sucesso! 🚀
+> **Status:** Laboratório concluído e validado com sucesso!

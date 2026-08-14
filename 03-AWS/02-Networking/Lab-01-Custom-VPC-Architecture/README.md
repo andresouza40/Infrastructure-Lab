@@ -29,4 +29,4 @@ A imagem abaixo demonstra o mapa visual da VPC customizada e suas conexões cria
 
 ---
 
-> **Status:** Missão 2 (Networking) concluída com sucesso! 🚀
+> **Status:** Networking concluída com sucesso!
