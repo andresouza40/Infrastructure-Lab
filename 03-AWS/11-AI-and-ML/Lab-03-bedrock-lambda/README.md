@@ -1,4 +1,4 @@
-# Lab 03: Serverless AI Integration with AWS Lambda & Amazon Bedrock
+# Lab 03: Integração IA Serverless com AWS Lambda e Amazon Bedrock
 
 ## 📌 Visão Geral
 Este laboratório demonstra a integração serverless entre uma função **AWS Lambda** em **Python 3.14** e o **Amazon Bedrock**, utilizando o SDK `boto3` para invocar modelos de linguagem generativa (Amazon Nova Micro) através de chamadas de API.
