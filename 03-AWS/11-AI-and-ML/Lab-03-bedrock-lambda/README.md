@@ -19,4 +19,4 @@ Durante os testes de invocação do Lambda, a integração com o Amazon Bedrock 
 ![Visão Geral do Lambda](imagem/01-lambda-overview.png)
 ![Código e Logs de Execução](imagem/02-lambda-code-execution.png)
 ![Configurações de Runtime](imagem/03-lambda-runtime-settings.png)
-![Permissões IAM Role](imagem/04-iam-role-permissions.png)
+![Permissões IAM Role](imagem/04-lambda-iam-role-permissions.png)
