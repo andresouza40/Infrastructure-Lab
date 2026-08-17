@@ -33,4 +33,4 @@ Durante os testes no painel do Bedrock:
 ---
 
 ## 📷 Evidência
-![Bedrock Guardrail Blocked](img/guardrail-blocked.png)
+![Bedrock Guardrail Blocked](imagem/guardrail-blocked.png)
