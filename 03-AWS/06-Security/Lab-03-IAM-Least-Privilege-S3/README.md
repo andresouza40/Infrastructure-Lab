@@ -1,18 +1,31 @@
-# Lab 03: IAM Policies Customizadas e Princípio do Menor Privilégio (Least Privilege)
+# Lab 03 - AWS IAM: Custom Policy e Princípio do Menor Privilégio para Amazon S3
 
-Este projeto demonstra a implementação de políticas de controle de acesso refinadas utilizando o **AWS IAM (Identity and Access Management)**. O objetivo é aplicar o **Princípio do Menor Privilégio (Least Privilege)**, garantindo que uma aplicação ou entidade possua apenas as permissões estritamente necessárias para desempenhar sua função.
-
----
-
-## 📐 Descrição da Solução
-
-* **IAM Policy Customizada:** Política em formato JSON que concede permissões exclusivas de leitura (`s3:ListBucket` e `s3:GetObject`) em um único bucket S3 específico.
-* **IAM Role:** Papel criado para ser assumido por instâncias EC2, eliminando a necessidade de credenciais estáticas (`Access Keys`).
-* **Segurança Refinada:** Bloqueio explícito ou implícito para qualquer outro recurso ou serviço fora do escopo definido na política.
+| Informação | Valor |
+| :--- | :--- |
+| **Serviço** | AWS IAM (Identity and Access Management) & Amazon S3 |
+| **Categoria** | Security, Identity & Compliance |
+| **Nível** | Intermediário |
+| **Certificações** | AWS Certified Security - Specialty / AWS Certified AI Practitioner / CLF-C02 |
+| **Status** | 🟢 Concluído |
 
 ---
 
-## 📄 Estrutura da Política JSON
+## Objetivo
+Configurar uma IAM Policy customizada no formato JSON e uma IAM Role vinculada a uma instância EC2, aplicando estritamente o princípio do menor privilégio (*Least Privilege*). O objetivo é garantir que a aplicação na EC2 acesse exclusivamente para leitura um único bucket S3, bloqueando qualquer outro acesso à conta.
+
+---
+
+## Estrutura Configurada
+
+* **Bucket Alvo:** `lab-sec-exclusivo-andresouza`
+* **Nome da Política Customizada:** `Policy-S3-ReadOnly-Lab`
+* **Nome da IAM Role:** `Role-EC2-S3-ReadOnly`
+* **Entidade de Confiança:** `ec2.amazonaws.com`
+* **Ações Permitidas:** `s3:ListBucket` e `s3:GetObject` (Apenas no bucket e objetos delimitados)
+
+---
+
+## Política IAM JSON (`Policy-S3-ReadOnly-Lab`)
 
 ```json
 {
@@ -24,7 +37,7 @@ Este projeto demonstra a implementação de políticas de controle de acesso ref
             "Action": [
                 "s3:ListBucket"
             ],
-            "Resource": "arn:aws:s3:::meu-bucket-lab-exclusivo"
+            "Resource": "arn:aws:s3:::lab-sec-exclusivo-andresouza"
         },
         {
             "Sid": "AllowGetObjectOnly",
@@ -32,7 +45,7 @@ Este projeto demonstra a implementação de políticas de controle de acesso ref
             "Action": [
                 "s3:GetObject"
             ],
-            "Resource": "arn:aws:s3:::meu-bucket-lab-exclusivo/*"
+            "Resource": "arn:aws:s3:::lab-sec-exclusivo-andresouza/*"
         }
     ]
 }
