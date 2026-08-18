@@ -35,26 +35,26 @@ Foi configurado um ambiente onde uma aplicação executada em uma instância EC2
 ## 1. Política IAM Customizada
 Criação da política JSON no IAM especificando os ARNs exatos do bucket e dos objetos.
 
-![](../imagem/01-iam-policy-customized.png)
+![](imagem/01-iam-policy-customized.png)
 
 ---
 
 ## 2. IAM Role Associada à EC2
 Criação e vinculação da IAM Role à instância EC2, garantindo o uso de credenciais temporárias via Instance Metadata Service (IMDS).
 
-![](../imagem/02-iam-role-attached.png)
+![](imagem/02-iam-role-attached.png)
 
 ---
 ## 3. Teste de Acesso Autorizado
 Validação prática via AWS CLI na EC2 confirmando a leitura com sucesso dos arquivos no bucket permitido.
 
-![](../imagem/03-s3-access-allowed.png)
+![](imagem/03-s3-access-allowed.png)
 
 ---
 ## 4. Teste de Acesso Negado (Least Privilege)
 Tentativa de acesso a outros buckets S3 da conta resultando em Access Denied, comprovando a eficácia do menor privilégio.
 
-![](../imagem/04-s3-access-denied.png)
+![](imagem/04-s3-access-denied.png)
 
 ---
 ## Serviços Utilizados
