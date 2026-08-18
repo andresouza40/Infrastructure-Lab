@@ -20,6 +20,33 @@ Foi configurado um ambiente onde uma aplicação executada em uma instância EC2
 
 ---
 
+## Política IAM JSON (`Policy-S3-ReadOnly-Lab`)
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowListBucketOnly",
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucket"
+            ],
+            "Resource": "arn:aws:s3:::lab-sec-exclusivo-andresouza"
+        },
+        {
+            "Sid": "AllowGetObjectOnly",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": "arn:aws:s3:::lab-sec-exclusivo-andresouza/*"
+        }
+    ]
+}
+
+```
+
 ## Estrutura Configurada
 
 * **Bucket Alvo:** `lab-sec-exclusivo-andresouza`
@@ -94,29 +121,4 @@ Tentativa de acesso a outros buckets S3 da conta resultando em Access Denied, co
 
 - S3 Bucket Policies e Access Points
 
----
 
-## Política IAM JSON (`Policy-S3-ReadOnly-Lab`)
-
-```json
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "AllowListBucketOnly",
-            "Effect": "Allow",
-            "Action": [
-                "s3:ListBucket"
-            ],
-            "Resource": "arn:aws:s3:::lab-sec-exclusivo-andresouza"
-        },
-        {
-            "Sid": "AllowGetObjectOnly",
-            "Effect": "Allow",
-            "Action": [
-                "s3:GetObject"
-            ],
-            "Resource": "arn:aws:s3:::lab-sec-exclusivo-andresouza/*"
-        }
-    ]
-}
