@@ -1,6 +1,6 @@
-# AWS High Availability Architecture: Application Load Balancer (ALB) & Multi-AZ VPC
+# Arquitetura de Alta Disponibilidade na AWS: Application Load Balancer (ALB) e VPC Multi-AZ
 
-Este projeto demonstra a implementação de uma arquitetura de alta disponibilidade e resiliência na AWS, utilizando um **Application Load Balancer (ALB)** para distribuir o tráfego HTTP entre instâncias EC2 implantadas em múltiplas Availability Zones (AZs) dentro de uma VPC customizada.
+Este projeto demonstra a implementação de uma arquitetura de alta disponibilidade e resiliência na AWS, utilizando um **Application Load Balancer (ALB)** para distribuir o tráfego HTTP entre instâncias EC2 implantadas em múltiplas Zonas de Disponibilidade (AZs) dentro de uma VPC customizada.
 
 ---
 
